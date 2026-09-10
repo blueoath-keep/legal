@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ドキュメント - 利用規約・プライバシーポリシー・サポート</title>
+    <title>Keep - ドキュメント（アプリ概要・利用規約・プライバシーポリシー）</title>
     <style>
         :root {
             --primary-color: #1a365d;
@@ -150,6 +150,12 @@
         li {
             margin-bottom: 8px;
         }
+        
+        .inline-link {
+            color: var(--secondary-color);
+            font-weight: 600;
+            text-decoration: underline;
+        }
 
         /* サポート情報テーブル・カードスタイル */
         .info-grid {
@@ -207,6 +213,7 @@
             <p>システム規約・ドキュメント</p>
         </div>
         <ul class="nav-links">
+            <li><a href="#home">アプリ概要 (Keep)</a></li>
             <li><a href="#terms">利用規約</a></li>
             <li><a href="#privacy">プライバシーポリシー</a></li>
             <li><a href="#support">サポートポリシー</a></li>
@@ -215,6 +222,32 @@
 
     <!-- メインコンテンツ -->
     <main class="main-content">
+
+        <!-- アプリ概要（OAuth審査要件対応セクション） -->
+        <section id="home" class="doc-section">
+            <div class="section-header">
+                <h2 class="section-title">アプリ概要 (Keep)</h2>
+            </div>
+
+            <h3>アプリについて</h3>
+            <p>「Keep」は、ブルーオース合同会社が提供する課題管理Webアプリケーションです。本アプリは、ユーザーが日常的に利用するGoogle Chatと連携し、チーム内で発生する課題を効率的に管理・追跡することを目的としています。</p>
+
+            <h3>主な機能</h3>
+            <p>本アプリはユーザーに対して以下の機能を提供します。</p>
+            <ul>
+                <li><strong>課題の閲覧:</strong> Google Chatで登録された課題データを取得し、専用のWeb画面上で一覧表示および詳細を確認することができます。</li>
+                <li><strong>状態（ステータス）の変更:</strong> Web画面上から、各課題の進捗状況やステータスを更新し、変更を管理することができます。</li>
+            </ul>
+
+            <h3>ユーザーデータの利用目的について</h3>
+            <p>本アプリは、上記の機能を提供するためにGoogle APIを利用し、以下のユーザーデータをリクエストします。取得したデータは本アプリの機能を提供・維持する目的でのみ透明性をもって使用されます。</p>
+            <ul>
+                <li><strong>Google アカウント情報 (メールアドレス等):</strong> アプリへアクセスするユーザーの本人確認、および本サービスを利用するための適切な権限チェックに使用します。</li>
+                <li><strong>Google Chat のデータ:</strong> Google Chat内で登録された課題に関するデータを読み取り、Web画面に表示するため、またユーザーの操作に基づいて課題の状態を更新するために利用します。</li>
+            </ul>
+            <p>※ ユーザーデータの詳細な取り扱いについては、下記の <a href="#privacy" class="inline-link">プライバシーポリシー</a> をご確認ください。</p>
+        </section>
+
 
         <!-- 利用規約 -->
         <section id="terms" class="doc-section">
@@ -326,4 +359,3 @@
 
 </body>
 </html>
-# web
